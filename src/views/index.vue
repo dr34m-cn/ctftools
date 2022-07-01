@@ -7,7 +7,7 @@
 					<home class="detail"></home>
 				</el-tab-pane>
 				<el-tab-pane :label="item.label" :name="item.name" v-for="(item,index) in ctftools" :key="index">
-					<detail class="detail" :data="item.data"></detail>
+					<detail class="detail" :data="item.data" v-if="item.name == activeName"></detail>
 				</el-tab-pane>
 			</el-tabs>
 		</div>
