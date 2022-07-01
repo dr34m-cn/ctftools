@@ -4,10 +4,10 @@
 		<div class="content">
 			<el-tabs v-model="activeName" tab-position="left">
 				<el-tab-pane label="首页" name="index">
-					<home></home>
+					<home class="detail"></home>
 				</el-tab-pane>
 				<el-tab-pane :label="item.label" :name="item.name" v-for="(item,index) in ctftools" :key="index">
-					<detail :data="item.data"></detail>
+					<detail class="detail" :data="item.data"></detail>
 				</el-tab-pane>
 			</el-tabs>
 		</div>
@@ -62,6 +62,10 @@
 		}
 
 		.content {
+			.detail {
+				width: calc(100% - 0px);
+			}
+			
 			width: calc(100% - 40px);
 			padding: 20px;
 

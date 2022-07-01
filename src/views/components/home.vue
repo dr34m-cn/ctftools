@@ -140,7 +140,6 @@
 </script>
 <style scoped lang="scss">
 	.home {
-		width: 100%;
 		height: calc(100vh - 130px);
 		overflow-y: auto;
 
