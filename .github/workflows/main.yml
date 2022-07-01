@@ -1,0 +1,74 @@
+name: Hexo博客持续集成
+
+on: 
+  push:
+    branches:
+      - master
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+        
+    steps:
+    - name: 检出仓库代码
+      uses: actions/checkout@master
+      
+    - name: 安装Node.js 14.x
+      uses: actions/setup-node@master
+      with:
+        node-version: "14.x"
+    
+    - name: 安装依赖
+      run: |
+        npm install
+
+    - name: 构建
+      run: |
+        npm run build
+
+    - name: 安装腾讯云依赖
+      run: |
+        sudo pip install coscmd
+        # sudo pip install tccli
+
+    - name: 配置腾讯云依赖
+      env:
+        SECRET_ID: ${{ secrets.TCLOUD_API_ID }}
+        SECRET_KEY: ${{ secrets.TCLOUD_API_KEY }}
+        BUCKET: ctftools-1252906577
+        REGION: ap-nanjing
+      run: |
+        coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
+        # tccli configure set secretId $SECRET_ID
+        # tccli configure set secretKey $SECRET_KEY
+        # tccli configure set region $REGION
+
+    - name: 上传到腾讯云COS并刷新CDN
+      run: |
+        coscmd upload -rfs --delete ./dist/ /
+        # tccli cdn PurgePathCache --cli-unfold-argument --Paths https://www.ctftools.com/ --FlushType flush
+
+    - name: 打包压缩
+      run: tar -zcvf release.tgz dist
+
+    - name: 发布 Release
+      id: create_release
+      uses: actions/create-release@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.run_id }}
+        release_name: Release ${{ github.run_id }}
+        draft: false
+        prerelease: false
+
+    - name: 上传构建结果到 Release
+      id: upload-release-asset
+      uses: actions/upload-release-asset@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./release.tgz
+        asset_name: release.tgz
+        asset_content_type: application/x-tgz
