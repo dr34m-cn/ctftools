@@ -1,9 +1,9 @@
-name: Hexo博客持续集成
+name: CTFTools持续集成
 
 on: 
   push:
     branches:
-      - master
+      - main
       
 jobs:
   build:
