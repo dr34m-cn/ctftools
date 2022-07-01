@@ -9,7 +9,7 @@
 			</tr>
 			<tr>
 				<td>本工具库将持续更新:-)</td>
-				<td colspan="3"><b>上一次更新于：<a>2022-06-30</a></b></td>
+				<td colspan="3"><b>上一次更新于：<a>2022-07-01</a>，欢迎<a href="https://github.com/dr34-m/ctftools" target="_blank">前往Github提交PR</a></b></td>
 			</tr>
 			<tr>
 				<td>作者博客</td>
@@ -49,10 +49,10 @@
 				<td colspan="5"><b>友情链接</b></td>
 			</tr>
 			<tr>
+				<td><b><a href="https://blog.jhailan.cn/" target="_blank">HaiLan's Blog</a></b></td>
 				<td><b><a href="https://www.se7ensec.cn/" target="_blank">Se7en's Blog</a></b></td>
-				<td><b><a href="http://hackfun.org/" target="_blank">精灵的博客</a></b></td>
+				<td><b><a href="https://hackfun.org/" target="_blank">精灵的博客</a></b></td>
 				<td><b><a href="https://www.yejinmo.com/" target="_blank">一只单身猿</a></b></td>
-				<td></td>
 				<td></td>
 			</tr>
 			<tr>
@@ -85,7 +85,7 @@
 			<tr>
 				<td colspan="2"><b>Se7en</b></td>
 				<td colspan="3"><b>
-						<a href="http://www.se7ensec.cn/" target="_blank">www.se7ensec.cn</a>
+						<a href="https://www.se7ensec.cn/" target="_blank">www.se7ensec.cn</a>
 					</b></td>
 			</tr>
 			<tr>
@@ -140,7 +140,7 @@
 </script>
 <style scoped lang="scss">
 	.home {
-		height: calc(100vh - 130px);
+		height: calc(100vh - 124px);
 		overflow-y: auto;
 
 		.table {

@@ -9,7 +9,7 @@
 				<template slot-scope="scope">
 					<div v-for="(item,index) in scope.row.download" :key="index" class="downloadArea">
 						<el-button :type="item.type==1?'primary':(item.type==2?'success':(item.type==3?'warning':''))" size="mini" @click="onClickCopy(item)">
-							点击下载
+							{{item.type==1?'百度网盘':(item.type==2?'官网 / Git':(item.type==3?'迅雷网盘':'点击下载'))}}
 						</el-button>
 					</div>
 				</template>
@@ -83,7 +83,7 @@
 </script>
 <style scoped lang="scss">
 	.detail {
-		height: calc(100vh - 130px);
+		height: calc(100vh - 124px);
 		overflow-y: auto;
 
 		.current-input {

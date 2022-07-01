@@ -12,14 +12,7 @@
 			</el-tabs>
 		</div>
 		<div class="foot">
-			<div @click="toBeian">冀ICP备16028844号</div>
-			<div class="tips" v-if="activeName != 'index'">
-				<div>下载链接类型：</div>
-				<el-button type="primary" size="mini">百度网盘</el-button>
-				<el-button type="success" size="mini">官网 / Github</el-button>
-				<el-button type="warning" size="mini">迅雷网盘</el-button>
-				<el-button size="mini">其他</el-button>
-			</div>
+			<div class="beian" @click="toBeian">冀ICP备16028844号</div>
 		</div>
 	</div>
 </template>
@@ -62,10 +55,11 @@
 		}
 
 		.content {
+
 			.detail {
-				width: calc(100% - 0px);
+				width: 100%;
 			}
-			
+
 			width: calc(100% - 40px);
 			padding: 20px;
 
@@ -77,20 +71,15 @@
 		.foot {
 			position: absolute;
 			bottom: 10px;
-			left: 40%;
-			height: 28px;
-			width: calc(60% - 20px);
+			left: 0;
+			width: 100%;
 			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			cursor: pointer;
+			justify-content: center;
 			color: #999;
 
-			.tips {
-				display: flex;
-				align-items: center;
+			.beian {
+				cursor: pointer;
 			}
 		}
-
 	}
 </style>
