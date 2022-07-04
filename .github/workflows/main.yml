@@ -29,7 +29,7 @@ jobs:
     - name: 安装腾讯云依赖
       run: |
         sudo pip install coscmd
-        # sudo pip install tccli
+        sudo pip install tccli
 
     - name: 配置腾讯云依赖
       env:
@@ -39,14 +39,14 @@ jobs:
         REGION: ap-nanjing
       run: |
         coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
-        # tccli configure set secretId $SECRET_ID
-        # tccli configure set secretKey $SECRET_KEY
-        # tccli configure set region $REGION
+        tccli configure set secretId $SECRET_ID
+        tccli configure set secretKey $SECRET_KEY
+        tccli configure set region $REGION
 
     - name: 上传到腾讯云COS并刷新CDN
       run: |
         coscmd upload -rfs --delete ./dist/ /
-        # tccli cdn PurgePathCache --cli-unfold-argument --Paths https://www.ctftools.com/ --FlushType flush
+        tccli cdn PurgePathCache --cli-unfold-argument --Paths https://www.ctftools.com/ --FlushType flush
 
     - name: 打包压缩
       run: tar -zcvf release.tgz dist
