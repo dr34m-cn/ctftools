@@ -8,6 +8,10 @@ const tools = [{
 		link: 'https://pan.baidu.com/s/19p5GPCHabbZXVnw3YV8zsQ?pwd=45vm',
 		sercet: null,
 		type: 1
+	}, {
+		link: 'https://pan.xunlei.com/s/VN5z3cawrZL3gT53sM8vlxhFA1',
+		sercet: 'enst',
+		type: 3
 	}],
 	about: [{
 		link: 'https://jq.qq.com/?_wv=1027&k=43E99KK',
