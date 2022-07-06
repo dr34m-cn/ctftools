@@ -27,3 +27,8 @@
 ```
 
 十分感谢您的贡献，您的贡献可能会为成千上万人带来便利
+
+## 贡献者
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->

@@ -60,12 +60,12 @@ const tools = [{
     updateTime: '2022-07-01'
 }, {
     name: 'Hacking黑白红的CTF工具合集',
-    describe: '较新且全面的CTF工具合集',
-    size: '4.53GB',
+    describe: '较新的CTF工具合集',
+    size: '3.9GB',
     download: [{
-        link: 'https://www.123pan.com/s/TwPrVv-ve3WA',
-        sercet: 'WWRw',
-        type: 4
+        link: 'https://pan.baidu.com/s/1HVG9igNfTrtx-a2HR5r4XA?pwd=2fqe',
+        sercet: null,
+        type: 1
     }],
     about: [{
         link: 'https://blog.csdn.net/zsw15841822890/article/details/116523995',
