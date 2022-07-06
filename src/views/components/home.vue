@@ -9,7 +9,7 @@
 			</tr>
 			<tr>
 				<td>本工具库将持续更新:-)</td>
-				<td colspan="3"><b>上一次更新于：<a>2022-07-04</a>，欢迎<a href="https://github.com/dr34-m/ctftools" target="_blank">前往Github提交PR</a>，顺便点个star我会高兴坏的</b></td>
+				<td colspan="3"><b>上一次更新于：<a>2022-07-06</a>，欢迎<a href="https://github.com/dr34-m/ctftools" target="_blank">前往Github提交PR</a>，顺便点个star我会高兴坏的</b></td>
 			</tr>
 			<tr>
 				<td>作者博客</td>
