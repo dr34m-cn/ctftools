@@ -9,7 +9,8 @@
 			</tr>
 			<tr>
 				<td>本工具库将持续更新:-)</td>
-				<td colspan="3"><b>上一次更新于：<a>2022-07-06</a>，欢迎<a href="https://github.com/dr34-m/ctftools" target="_blank">前往Github提交PR</a>，顺便点个star我会高兴坏的</b></td>
+				<td colspan="3"><b>上一次更新于：<a>{{lastData}}</a>，欢迎<a href="https://github.com/dr34-m/ctftools" target="_blank">前往Github提交PR</a>，顺便点个star我会高兴坏的</b>
+				</td>
 			</tr>
 			<tr>
 				<td>作者博客</td>
@@ -126,16 +127,40 @@
 </template>
 
 <script>
+	import ctftools from '@/ctftools/index.js';
 	export default {
 		components: {},
 		data() {
 			return {
 				qqGroup: 'https://jq.qq.com/?_wv=1027&k=r62Zy5aQ',
-				mail: 'https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=37yruauwsLOsn66u8bywsg'
+				mail: 'https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=37yruauwsLOsn66u8bywsg',
+				ctftools,
+				lastData: '2022-07-01'
 			};
 		},
-		created() {},
-		methods: {}
+		created() {
+			this.getLastData();
+		},
+		methods: {
+			getLastData() {
+				let big = Date.parse(this.lastData.replace(/-/g, "\/"));
+				let dt = this.ctftools;
+				for (let i = 0; i < dt.length; i++) {
+					for (let j = 0; j < dt[i].data.length; j++) {
+						let cu = dt[i].data[j].updateTime;
+						try {
+							let cuPrase = Date.parse(cu.replace(/-/g, "\/"));
+							if (cuPrase > big) {
+								big = cuPrase;
+								this.lastData = cu;
+							}
+						} catch (err) {
+							continue;
+						}
+					}
+				}
+			}
+		}
 	};
 </script>
 <style scoped lang="scss">

@@ -1,6 +1,6 @@
 name: CTFTools持续集成
 
-on: 
+on:
   push:
     branches:
       - main
