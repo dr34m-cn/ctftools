@@ -48,7 +48,7 @@
         <a href="https://github.com/junyu33">
             <img src="https://avatars.githubusercontent.com/u/37526026?v=4" width="100;" alt="junyu33"/>
             <br />
-            <sub><b>junyu33</b></sub>
+            <sub><b>Junyu33</b></sub>
         </a>
     </td></tr>
 </table>
