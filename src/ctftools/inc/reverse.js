@@ -58,7 +58,7 @@ const reverse = [
 		"updateTime": "2022-07-20"
 	},
 	{
-		"name": "jadx",
+		"name": "jd-gui",
 		"describe": "一个独立的 Java 反编译器 GUI",
 		"size": "3.09MB",
 		"download": [
