@@ -80,6 +80,25 @@ const web = [
 			}
 		],
 		"updateTime": "2022-07-01"
+	},
+	{
+		"name": "dirsearch",
+		"describe": "目录扫描工具",
+		"size": "956KB",
+		"download": [
+			{
+				"link": "https://github.com/maurosoria/dirsearch/releases/",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://github.com/maurosoria/dirsearch",
+				"name": "官网"
+			}
+		],
+		"updateTime": "2021-09-12"
 	}
 ]
 export default web

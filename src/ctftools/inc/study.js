@@ -51,6 +51,82 @@ const study = [
 			}
 		],
 		"updateTime": "2022-07-04"
+	},
+	{
+		"name": "pikachu",
+		"describe": "一个好玩的Web安全-漏洞测试平台",
+		"size": "3.52MB",
+		"download": [
+			{
+				"link": "https://github.com/zhuifengshaonianhanlu/pikachu",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://github.com/zhuifengshaonianhanlu/pikachu",
+				"name": "Github"
+			}
+		],
+		"updateTime": "2022-03-22"
+	},
+	{
+		"name": "upload-labs",
+		"describe": "一个想帮你总结所有类型的上传漏洞的靶场",
+		"size": "7.68MB",
+		"download": [
+			{
+				"link": "https://github.com/c0ny1/upload-labs/releases/tag/0.1",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://github.com/c0ny1/upload-labs",
+				"name": "Github"
+			}
+		],
+		"updateTime": "2019-01-29"
+	},
+	{
+		"name": "sqli-labs",
+		"describe": "SQL注入练习靶场",
+		"size": "3.48MB",
+		"download": [
+			{
+				"link": "https://github.com/Audi-1/sqli-labs",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://github.com/Audi-1/sqli-labs",
+				"name": "Github"
+			}
+		],
+		"updateTime": "2014-11-01"
+	},
+	{
+		"name": "MemLabs",
+		"describe": "内存取证靶场",
+		"size": "约2GB",
+		"download": [
+			{
+				"link": "https://github.com/stuxnet999/MemLabs",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://github.com/stuxnet999/MemLabs",
+				"name": "Github"
+			}
+		],
+		"updateTime": "2021-03-08"
 	}
 ]
 export default study

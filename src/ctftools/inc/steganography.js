@@ -105,6 +105,101 @@ const steganography = [
 			}
 		],
 		"updateTime": "2022-07-04"
+	},
+	{
+		"name": "zsteg",
+		"describe": "检测 PNG 和 BMP 中的隐写数据",
+		"size": "约9MB",
+		"download": [
+			{
+				"link": "https://github.com/zed-0xff/zsteg/tags",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://github.com/zed-0xff/zsteg/",
+				"name": "Github"
+			}
+		],
+		"updateTime": "2022-06-30"
+	},
+	{
+		"name": "MP3stego",
+		"describe": "MP3隐写工具",
+		"size": "3.4MB",
+		"download": [
+			{
+				"link": "https://www.petitcolas.net/fabien/software/MP3Stego_1_1_19.zip",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://www.petitcolas.net/steganography/mp3stego/",
+				"name": "官网"
+			}
+		],
+		"updateTime": "2018-11-01"
+	},
+	{
+		"name": "F5-steganography",
+		"describe": "F5-steganography",
+		"size": "240KB",
+		"download": [
+			{
+				"link": "https://github.com/matthewgao/F5-steganography",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://github.com/matthewgao/F5-steganography",
+				"name": "Github"
+			}
+		],
+		"updateTime": "2021-11-01"
+	},
+	{
+		"name": "ExifTool",
+		"describe": "读取、写入和编辑 各种文件中的元信息",
+		"size": "6.4MB",
+		"download": [
+			{
+				"link": "https://exiftool.org/",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://exiftool.org/",
+				"name": "官网"
+			}
+		],
+		"updateTime": "2022-07-21"
+	},
+	{
+		"name": "TweakPNG",
+		"describe": "TweakPNG 是一个用于检查和修改 PNG 图像文件的实用程序",
+		"size": "6.4MB",
+		"download": [
+			{
+				"link": "https://entropymine.com/jason/tweakpng/",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://entropymine.com/jason/tweakpng/",
+				"name": "官网"
+			}
+		],
+		"updateTime": "2014-09-07"
 	}
 ]
 export default steganography

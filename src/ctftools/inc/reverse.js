@@ -37,6 +37,44 @@ const reverse = [
 			}
 		],
 		"updateTime": "2022-07-04"
+	},
+	{
+		"name": "jadx",
+		"describe": "Android反编译工具",
+		"size": "约26MB",
+		"download": [
+			{
+				"link": "https://github.com/skylot/jadx/releases/",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://github.com/skylot/jadx",
+				"name": "Github"
+			}
+		],
+		"updateTime": "2022-07-20"
+	},
+	{
+		"name": "jd-gui",
+		"describe": "一个独立的 Java 反编译器 GUI",
+		"size": "3.09MB",
+		"download": [
+			{
+				"link": "https://github.com/java-decompiler/jd-gui/releases/tag/v1.6.6",
+				"sercet": null,
+				"type": 2
+			}
+		],
+		"about": [
+			{
+				"link": "https://github.com/java-decompiler/jd-gui",
+				"name": "Github"
+			}
+		],
+		"updateTime": "2019-12-25"
 	}
 ]
 export default reverse
