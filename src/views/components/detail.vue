@@ -65,7 +65,9 @@
 						}, 3000);
 					})
 				} else {
-					window.open(item.link);
+					setTimeout(function() {
+						window.open(item.link);
+					}, 2000);
 				}
 			},
 			handleClose() {
