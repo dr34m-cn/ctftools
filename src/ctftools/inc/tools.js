@@ -8,14 +8,12 @@ const tools = [
 			{
 				"link": "https://pan.baidu.com/s/19p5GPCHabbZXVnw3YV8zsQ?pwd=45vm",
 				"sercet": null,
-				"type": 1,
-				"visible": true
+				"type": 1
 			},
 			{
 				"link": "https://pan.xunlei.com/s/VN5z3cawrZL3gT53sM8vlxhFA1",
 				"sercet": "enst",
-				"type": 3,
-				"visible": true
+				"type": 3
 			}
 		],
 		"about": [
@@ -34,14 +32,12 @@ const tools = [
 			{
 				"link": "https://pan.baidu.com/s/1Qu4c29XxWc_akuKD66OQeg?pwd=iuce",
 				"sercet": null,
-				"type": 1,
-				"visible": true
+				"type": 1
 			},
 			{
 				"link": "https://pan.xunlei.com/s/VN5sjtNy6nFyu7ZOwAuhTWOqA1",
 				"sercet": "h3e9",
-				"type": 3,
-				"visible": true
+				"type": 3
 			}
 		],
 		"about": [
@@ -60,20 +56,17 @@ const tools = [
 			{
 				"link": "https://github.com/0Chencc/CTFCrackTools/releases",
 				"sercet": null,
-				"type": 2,
-				"visible": true
+				"type": 2
 			},
 			{
 				"link": "https://pan.baidu.com/s/1O9hwkScxHgg0E3XnM_83UQ?pwd=69ib",
 				"sercet": null,
-				"type": 1,
-				"visible": true
+				"type": 1
 			},
 			{
 				"link": "https://pan.xunlei.com/s/VN5slQYJFZksX0wyQutp3CZwA1",
 				"sercet": "6iyw",
-				"type": 3,
-				"visible": true
+				"type": 3
 			}
 		],
 		"about": [
@@ -92,8 +85,7 @@ const tools = [
 			{
 				"link": "https://pan.baidu.com/s/1HVG9igNfTrtx-a2HR5r4XA?pwd=2fqe",
 				"sercet": null,
-				"type": 1,
-				"visible": true
+				"type": 1
 			}
 		],
 		"about": [
