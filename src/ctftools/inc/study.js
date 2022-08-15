@@ -2,7 +2,7 @@
 const study = [
 	{
 		"name": "价值千元的i安全渗透教程",
-		"describe": "由资源共享吧破解的【i安全】付费教程",
+		"describe": "由资源共享吧共享的【i安全】付费教程",
 		"size": "9.96GB",
 		"download": [
 			{

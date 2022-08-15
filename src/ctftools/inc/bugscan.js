@@ -25,7 +25,7 @@ const bugscan = [
 		"updateTime": "2022-07-04"
 	},
 	{
-		"name": "AppScan 8.7 破解版",
+		"name": "AppScan 8.7 学习版",
 		"describe": "强大的WEB漏洞扫描工具",
 		"size": "585MB",
 		"download": [
