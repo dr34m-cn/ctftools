@@ -51,10 +51,10 @@ jobs:
     - name: 部署到Pages
       uses: s0/git-publish-subdir-action@develop
       env:
-        REPO: self
-        BRANCH: gh-pages
+        REPO: git@github.com:dr34-m/ctftools.github.io.git
+        BRANCH: main
         FOLDER: dist
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
 
     - name: 打包压缩
       run: tar -zcvf release.tgz dist
