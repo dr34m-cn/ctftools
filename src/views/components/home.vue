@@ -135,11 +135,11 @@
 				qqGroup: 'https://jq.qq.com/?_wv=1027&k=r62Zy5aQ',
 				mail: 'https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=37yruauwsLOsn66u8bywsg',
 				ctftools,
-				lastData: '2022-07-01'
+				lastData: '2022-09-02'
 			};
 		},
 		created() {
-			this.getLastData();
+			// this.getLastData();
 		},
 		methods: {
 			getLastData() {
@@ -165,7 +165,6 @@
 </script>
 <style scoped lang="scss">
 	.home {
-		height: calc(100vh - 124px);
 		overflow-y: auto;
 
 		.table {

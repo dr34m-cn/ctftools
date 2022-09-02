@@ -85,7 +85,6 @@
 </script>
 <style scoped lang="scss">
 	.detail {
-		height: calc(100vh - 124px);
 		overflow-y: auto;
 
 		.current-input {
