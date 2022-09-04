@@ -97,7 +97,7 @@ jobs:
         path: ctftools-dist
 
     - name: 打包压缩
-      run: tar -zcvf release.tgz dist
+      run: tar -zcvf release.tgz ctftools-dist
 
     - name: 发布 Release
       id: create_release
