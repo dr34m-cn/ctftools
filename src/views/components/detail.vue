@@ -31,7 +31,8 @@
 				跳转下载页面；
 			</div>
 			<div style="margin-top: 10px;">
-				<span v-if="current.sercet">提取码：<input class="current-input" id="copy" :value="current.sercet"></input>，</span>如有解压密码，均为<b>ctftools</b>
+				<p v-if="current.sercet">提取码：<input class="current-input" id="copy" :value="current.sercet"></input></p>
+				<span style="font-size: 24px;">如有<b style="color: red;">解压密码</b>，均为<b style="color: red;">ctftools</b></span>
 			</div>
 			<span slot="footer" class="dialog-footer">
 				<el-button type="primary" @click="current = null">确 定</el-button>

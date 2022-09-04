@@ -1,7 +1,9 @@
 <template>
 	<div class="main">
 		<div class="title-box">
-			<div class="width-area"></div>
+			<div class="width-area">
+				<el-button type="warning" size="mini" @click="goTo()">切换至国{{showBeian ? '际' : '内'}}镜像</el-button>
+			</div>
 			<div class="title">CTFTools</div>
 			<div class="width-area">
 				<el-button type="danger" size="mini" @click="showEdit">提交/编辑工具</el-button>
@@ -49,6 +51,13 @@
 			toBeian() {
 				window.open("http://beian.miit.gov.cn/");
 			},
+			goTo() {
+				let url = 'https://www.ctftools.com/';
+				if(this.showBeian) {
+					url = 'https://ctftools.github.io/';
+				}
+				window.location = url;
+			},
 			showEdit() {
 				this.$refs.edit.showDialogBefore();
 			}
@@ -67,7 +76,8 @@
 			align-items: center;
 
 			.width-area {
-				width: 130px;
+				width: 140px;
+				text-align: center;
 			}
 
 			.title {
