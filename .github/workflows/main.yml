@@ -122,16 +122,6 @@ jobs:
     steps:
     - name: 更新贡献者列表
       id: update-contributors
-      uses: akhilmhdh/contributors-readme-action@v2.3.4
+      uses: akhilmhdh/contributors-readme-action@v2.3.6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  remove-artifacts:
-    runs-on: ubuntu-latest
-    needs: [deploy-page, deploy-tx, release]
-
-    steps:
-    - name: 删除artifacts
-      uses: c-hive/gha-remove-artifacts@v1
-      with:
-        age: '1 seconds'
