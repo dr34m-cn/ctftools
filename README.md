@@ -62,7 +62,7 @@
         <a href="https://github.com/ctftools">
             <img src="https://avatars.githubusercontent.com/u/112684983?v=4" width="100;" alt="ctftools"/>
             <br />
-            <sub><b>ctftools</b></sub>
+            <sub><b>Ctftools</b></sub>
         </a>
     </td></tr>
 </table>
