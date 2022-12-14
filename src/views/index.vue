@@ -2,10 +2,10 @@
 	<div class="main">
 		<div class="title-box">
 			<div class="width-area">
-				<el-button type="warning" size="mini" @click="goTo()">切换至国{{showBeian ? '际' : '内'}}镜像</el-button>
 			</div>
 			<div class="title">CTFTools</div>
 			<div class="width-area">
+				<el-button type="warning" size="mini" @click="goTo()">切换至国{{showBeian ? '际' : '内'}}镜像</el-button>
 				<el-button type="danger" size="mini" @click="showEdit">提交/编辑工具</el-button>
 			</div>
 		</div>
@@ -76,8 +76,9 @@
 			align-items: center;
 
 			.width-area {
-				width: 140px;
-				text-align: center;
+				display: flex;
+				align-items: center;
+				width: 256px;
 			}
 
 			.title {
