@@ -67,3 +67,8 @@
     </td></tr>
 </table>
 <!-- readme: contributors -end -->
+
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/dr34-m/ctftools.svg?variant=adaptive)](https://starchart.cc/dr34-m/ctftools)
