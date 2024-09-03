@@ -1,10 +1,8 @@
 # CTFTools源码
 
-### 前端地址在[CTF资源库](https://www.ctftools.com)
+### 前端地址在[CTF资源库](https://www.ctftools.com) 或 [国际镜像](https://ctftools.github.io/)
 
 由于不能保证足够的时间与精力维护本项目，同时为了保证安全，本项目纯静态。如希望为本项目提供工具，可按以下格式为`/src/ctftools/inc/`目录下JS文件添加对象，并提交PR；或者您也在前端页面通过点击右上角按钮，以可视化的方式编辑并提交PR。
-
-这可能是你最容易得到的PR机会，希望拿到Github成就的小伙伴别错过，提交PR并通过的朋友会自动出现在下方的贡献者列表中。
 
 **顺便点个Star我会高兴坏的！**
 
@@ -68,7 +66,4 @@
 </table>
 <!-- readme: contributors -end -->
 
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/dr34-m/ctftools.svg?variant=adaptive)](https://starchart.cc/dr34-m/ctftools)
+<!--![Stargazers over time](https://starchart.cc/dr34-m/ctftools.svg?variant=adaptive)](https://starchart.cc/dr34-m/ctftools)-->
