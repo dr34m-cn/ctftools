@@ -27,7 +27,7 @@ jobs:
         npm run build
 
     - name: 上传artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ctftools-dist
         path: dist
@@ -39,7 +39,7 @@ jobs:
         
     steps:
     - name: 下载构建结果
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: ctftools-dist
         path: ctftools-dist
@@ -58,7 +58,7 @@ jobs:
         
     steps:
     - name: 下载构建结果
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: ctftools-dist
         path: ctftools-dist
@@ -86,7 +86,7 @@ jobs:
 
     steps:
     - name: 下载构建结果
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: ctftools-dist
         path: ctftools-dist
