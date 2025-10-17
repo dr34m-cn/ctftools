@@ -9,14 +9,16 @@
 			</tr>
 			<tr>
 				<td>本工具库将持续更新:-)</td>
-				<td colspan="3"><b>上一次更新于：<a>{{lastData}}</a>，欢迎<a href="https://github.com/dr34-m/ctftools" target="_blank">前往Github提交PR</a>，顺便点个star我会高兴坏的</b>
+				<td colspan="3"><b>上一次更新于：<a>{{ lastData }}</a>，欢迎<a href="https://github.com/dr34-m/ctftools"
+							target="_blank">前往Github提交PR</a>，顺便点个star我会高兴坏的</b>
 				</td>
 			</tr>
 			<tr>
 				<td>作者博客</td>
-				<td><a href="https://blog.ctftools.com/" target="_blank"><b>Dr3@m's Blog</b></a></td>
+				<td><a href="https://dr34m.cn/" target="_blank"><b>Dr3@m's Blog</b></a></td>
 				<td>项目地址</td>
-				<td><a href="https://github.com/dr34-m/ctftools" target="_blank"><b>https://github.com/dr34-m/ctftools</b></a></td>
+				<td><a href="https://github.com/dr34m-cn/ctftools"
+						target="_blank"><b>https://github.com/dr34m-cn/ctftools</b></a></td>
 			</tr>
 			<tr>
 				<td colspan="4"><b>在线工具</b></td>
@@ -41,7 +43,8 @@
 			</tr>
 			<tr>
 				<td>在线运行</td>
-				<td colspan="2"><a href="https://c.runoob.com/" target="_blank"><b>在线运行C(++)/Python/Java/PHP/Go/VB...</b></a></td>
+				<td colspan="2"><a href="https://c.runoob.com/"
+						target="_blank"><b>在线运行C(++)/Python/Java/PHP/Go/VB...</b></a></td>
 				<td><a href="https://tool.lu/" target="_blank"><b>程序员的工具箱</b></a></td>
 			</tr>
 		</table>
@@ -108,7 +111,8 @@
 					</b></td>
 			</tr>
 			<tr>
-				<td colspan="5"><b>特别感谢<a href="https://www.qcloud.com/" target="_blank">腾讯云</a>，<a href="https://www.hackfun.org/"
+				<td colspan="5"><b>特别感谢<a href="https://www.qcloud.com/" target="_blank">腾讯云</a>，<a
+							href="https://www.hackfun.org/"
 							target="_blank">精灵_Sunnyelf</a>对本站的支持，特别感谢<a>Space</a>提供的早期网站UI</b></td>
 			</tr>
 			<tr>
@@ -127,76 +131,76 @@
 </template>
 
 <script>
-	import ctftools from '@/ctftools/index.js';
-	export default {
-		components: {},
-		data() {
-			return {
-				qqGroup: 'https://jq.qq.com/?_wv=1027&k=r62Zy5aQ',
-				mail: 'https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=37yruauwsLOsn66u8bywsg',
-				ctftools,
-				lastData: '2022-09-02'
-			};
-		},
-		created() {
-			// this.getLastData();
-		},
-		methods: {
-			getLastData() {
-				let big = Date.parse(this.lastData.replace(/-/g, "\/"));
-				let dt = this.ctftools;
-				for (let i = 0; i < dt.length; i++) {
-					for (let j = 0; j < dt[i].data.length; j++) {
-						let cu = dt[i].data[j].updateTime;
-						try {
-							let cuPrase = Date.parse(cu.replace(/-/g, "\/"));
-							if (cuPrase > big) {
-								big = cuPrase;
-								this.lastData = cu;
-							}
-						} catch (err) {
-							continue;
+import ctftools from '@/ctftools/index.js';
+export default {
+	components: {},
+	data() {
+		return {
+			qqGroup: 'https://jq.qq.com/?_wv=1027&k=r62Zy5aQ',
+			mail: 'https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=37yruauwsLOsn66u8bywsg',
+			ctftools,
+			lastData: '2022-09-02'
+		};
+	},
+	created() {
+		// this.getLastData();
+	},
+	methods: {
+		getLastData() {
+			let big = Date.parse(this.lastData.replace(/-/g, "\/"));
+			let dt = this.ctftools;
+			for (let i = 0; i < dt.length; i++) {
+				for (let j = 0; j < dt[i].data.length; j++) {
+					let cu = dt[i].data[j].updateTime;
+					try {
+						let cuPrase = Date.parse(cu.replace(/-/g, "\/"));
+						if (cuPrase > big) {
+							big = cuPrase;
+							this.lastData = cu;
 						}
+					} catch (err) {
+						continue;
 					}
 				}
 			}
 		}
-	};
+	}
+};
 </script>
 <style scoped lang="scss">
-	.home {
-		overflow-y: auto;
+.home {
+	overflow-y: auto;
 
-		.table {
-			border-collapse: collapse;
-			width: 100%;
+	.table {
+		border-collapse: collapse;
+		width: 100%;
 
-			a {
-				color: #409eff;
-				text-decoration: none;
-			}
+		a {
+			color: #409eff;
+			text-decoration: none;
+		}
 
-			th {
-				border: 1px #d2d2d2 solid;
-				height: 40px;
-				line-height: 40px;
-				width: 90px;
-			}
+		th {
+			border: 1px #d2d2d2 solid;
+			height: 40px;
+			line-height: 40px;
+			width: 90px;
+		}
 
-			td {
-				border: 1px #d2d2d2 solid;
-				padding: 10px 8px;
-				text-align: center;
-				width: 90px;
-			}
+		td {
+			border: 1px #d2d2d2 solid;
+			padding: 10px 8px;
+			text-align: center;
+			width: 90px;
+		}
 
-			tr:nth-child(odd) {
-				background: #f8f8f8;
-			}
+		tr:nth-child(odd) {
+			background: #f8f8f8;
+		}
 
-			tr:hover {
-				background: #ecf5ff;
-			}
+		tr:hover {
+			background: #ecf5ff;
 		}
 	}
+}
 </style>
